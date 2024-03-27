@@ -9,7 +9,7 @@ const Header = () => {
  
       <Navbar/>
       <h1>sorry dostooooooooooooo</h1>
-
+      <h2>Thike</h2>
     </div>
   )
 }
