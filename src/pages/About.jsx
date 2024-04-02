@@ -4,6 +4,7 @@ import Gallery from "../components/Gallery";
 import Team from "../components/Team";
 import Statistics from "../components/Statistics";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 const About = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const About = () => {
       <AboutUs />
       <Gallery />
       <Team />
+      <Footer />
     </>
   );
 };

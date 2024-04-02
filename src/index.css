@@ -5,3 +5,32 @@
 body {
   background-color: white;
 }
+
+
+/* Accordion Css */
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordion-icon {
+  margin-left: 10px;
+}
+
+.accordion-content {
+  padding: 0px 10px;
+  color: #5f5f5f;
+  font-size: 15px;
+
+}
+.accordion-item{
+  background-color: #f1f4f8;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}

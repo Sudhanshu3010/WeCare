@@ -10,7 +10,7 @@ import galleryimg6 from "../assets/galleryimg6.jpg";
 const Gallery = () => {
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font m-3">
         <div className="container px-16 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">

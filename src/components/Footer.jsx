@@ -4,7 +4,7 @@ import weblg from "../assets/weblg.png";
 const Footer = () => {
   return (
     <div
-      className="w-full bg-gray-900 px-4 text-white pt-8
+      className="w-full px-[100px] pb-[20px] bg-gray-900 px-4 text-white pt-8
     flex flex-col md:flex-row flex-wrap justify-between "
     >
       <div className="p-[20px] ">

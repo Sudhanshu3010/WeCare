@@ -7,7 +7,7 @@ const AboutUs = () => {
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
           About Us
         </h1>
-        <p className="leading-relaxed">
+        <p className="md:w-2/3 mx-auto text-center leading-relaxed text-base">
           Welcome to WeCare, where our mission is to revolutionize surplus
           resource management and redistribution, particularly focusing on the
           critical issues facing India. We recognize that waste is not merely a

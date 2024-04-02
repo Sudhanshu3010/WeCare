@@ -1,9 +1,10 @@
+
 import React from "react";
 
 const Statistics = () => {
   return (
     <section class="text-gray-600 body-font">
-      <div class="container px-16 py-12 mx-auto">
+      <div class="container  px-24 py-12 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             Statistics

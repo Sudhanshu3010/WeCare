@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Title from "./Title";
+// import { Link } from "react-router-dom";
+// import Title from "./Title";
 import Navbar from "./Navbar";
 
 const Header = () => {
