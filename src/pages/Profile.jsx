@@ -5,6 +5,13 @@ import dnimg3 from "../assets/dn-img-3.jpeg";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Accordion } from "../components/Faq";
+import React, { useState } from 'react';
+import dnimg1 from '../assets/dn-img-1.jpeg';
+import dnimg2 from '../assets/dn-img-2.jpeg';
+import dnimg3 from '../assets/dn-img-3.jpeg';
+
+import { Accordion } from '../components/Faq';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
   const [activeTab, setActiveTab] = useState("profile");
