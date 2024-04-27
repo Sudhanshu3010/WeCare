@@ -314,8 +314,7 @@ const Profile = () => {
                     Pickup Location
                   </p>
                   <p>
-                    Shivaji Lawn, Shahu Nagar,Besa rd.
-                    <br /> Nagpur - 440034
+                    Shivaji Lawn, Shahu Nagar,Besa rd. Nagpur - 440034
                   </p>
                 </div>
                 <div className="vl m-0"></div>
