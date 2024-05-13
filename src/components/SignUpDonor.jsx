@@ -29,7 +29,10 @@ const SignUpDonor = () => {
     }
 
     if (!Phoneno.trim()) {
-      errors.phone = "Phone number is required";
+      errors.phone = "Phone Number is required";
+      isValid = false;
+    } else if (!/^\d{10}$/.test(Phoneno.trim())) {
+      errors.phone = "Phone number should be 10 digits long";
       isValid = false;
     }
 
