@@ -62,3 +62,10 @@ body {
   height: 4px;
   background-color: orange;
 }
+.backface-visible {
+  backface-visibility: visible;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
