@@ -1,9 +1,11 @@
-import React, { useState } from "react";
 import registerimg from "../assets/register-img.png";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { API_END_POINT } from "../utils/constant.js";
 import toast from "react-hot-toast";
+import { useDispatch } from "react-redux"; // Import useDispatch
+import { setUserOTP } from "../redux/userSlice"; // Import your action creator
 
 const SignUpReceiver = () => {
   const [FName, setFirstName] = useState("");
@@ -13,6 +15,8 @@ const SignUpReceiver = () => {
   const [Password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
+  const dispatch = useDispatch(); // Initialize useDispatch
 
   const validateForm = () => {
     const errors = {};
@@ -68,18 +72,30 @@ const SignUpReceiver = () => {
       return;
     }
 
-    const user = { FName, LName, Phoneno, Email, Password };
+    const user = {
+      FName,
+      LName,
+      Phoneno,
+      Email,
+      Password,
+      verified: false,
+      role: "Reciver",
+    };
 
     try {
       const res = await axios.post(`${API_END_POINT}/register`, user);
+      console.log("Server response:", res.data);
       if (res.data.success) {
         toast.success(res.data.message);
+        console.log("User OTP:", res.data.userOTP); // Log user OTP data
+        dispatch(setUserOTP(res.data.userOTP)); // Dispatch the action
+        navigate("/verify");
       }
     } catch (error) {
       toast.error(error.response.data.message);
-      console.log(error);
     }
 
+    // Resetting form fields
     setFirstName("");
     setLastName("");
     setPhoneNumber("");
