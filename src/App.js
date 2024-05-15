@@ -9,6 +9,7 @@ import Donation from "./pages/Donation";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Verify from "./pages/Verify";
 import { Toaster } from "react-hot-toast";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/verify" element={<Verify />} />
       </Routes>
       <Toaster />
       <Footer />
