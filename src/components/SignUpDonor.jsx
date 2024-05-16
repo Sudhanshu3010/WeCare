@@ -79,7 +79,7 @@ const SignUpDonor = () => {
       Email,
       Password,
       verified: false,
-      role: "Doneor",
+      role: "Donor",
     };
 
     try {
