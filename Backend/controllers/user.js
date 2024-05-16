@@ -82,7 +82,7 @@ export const Logout = async (req, res) => {
 
 export const Register = async (req, res) => {
   try {
-    const { FName, LName, Email, Phoneno, Password } = req.body;
+    const { FName, LName, Email, Phoneno, Password, role } = req.body;
     console.log("FName:", FName);
     console.log("LName:", LName);
     console.log("Email:", Email);
@@ -117,6 +117,7 @@ export const Register = async (req, res) => {
       Phoneno,
       Password: hashPassword,
       Verified: false,
+      role,
     });
 
     // Send OTP email and await the response
